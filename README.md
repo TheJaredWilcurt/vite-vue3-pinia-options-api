@@ -1,6 +1,6 @@
 # Vue 3 + Vite + Pinia + Options API
 
-This template should help get you started developing with Vue 3 and Pinia in Vite.
+This template should help get you started developing with Vue 3 and Pinia using Vite.
 
 
 ## Running locally
