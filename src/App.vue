@@ -29,10 +29,7 @@
 </template>
 
 <script>
-import {
-  mapGetters,
-  mapState
-} from 'pinia';
+import { mapState } from 'pinia';
 
 import { counterStore } from '@/stores/counter.js';
 
@@ -55,9 +52,7 @@ export default {
       return counterStore();
     },
     ...mapState(counterStore, [
-      'count'
-    ]),
-    ...mapGetters(counterStore, [
+      'count',
       'doubledCount'
     ])
   }
