@@ -7,7 +7,7 @@
     />
 
     <div class="wrapper">
-      <HelloWorld message="Vite, Vue 3, Pinia, Options API" />
+      <HelloWorld :message="APP_NAME" />
 
       <hr />
 
@@ -34,6 +34,8 @@ import {
   mapState
 } from 'pinia';
 
+import { APP_NAME } from '@/helpers/constants.js';
+
 import { counterStore } from '@/stores/counter.js';
 
 import HelloWorld from '@/components/HelloWorld.vue';
@@ -44,6 +46,9 @@ export default {
   components: {
     HelloWorld,
     TheWelcome
+  },
+  constants: {
+    APP_NAME
   },
   computed: {
     counterStore: function () {
