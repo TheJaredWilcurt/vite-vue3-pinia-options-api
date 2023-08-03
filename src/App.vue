@@ -38,7 +38,6 @@ import { counterStore } from '@/stores/counter.js';
 
 import { APP_NAME } from '@/helpers/constants.js';
 
-
 import HelloWorld from '@/components/HelloWorld.vue';
 import TheWelcome from '@/components/TheWelcome.vue';
 
