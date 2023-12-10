@@ -6,56 +6,33 @@
       src="./assets/logo.svg"
     />
 
-    <div class="wrapper">
-      <HelloWorld :message="APP_NAME" />
+    <nav>
+      <RouterLink :to="{ name: 'welcome' }">
+        Welcome
+      </RouterLink>
+      <RouterLink :to="{ name: 'pinia' }">
+        Pinia Demo
+      </RouterLink>
+      <RouterLink :to="{ name: 'resources' }">
+        Resources
+      </RouterLink>
+    </nav>
 
-      <hr />
-
-      <div>
-        <h2 class="green">🍍 Pinia Example:</h2>
-
-        <ul>
-          <li><strong>Count:</strong> {{ count }}</li>
-          <li><strong>Doubled Count:</strong> {{ doubledCount }}</li>
-          <li><button @click="counterStore.incrementCount">Increment Count</button></li>
-        </ul>
-      </div>
-    </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <RouterView />
   </main>
 </template>
 
 <script>
-import { mapState } from 'pinia';
-
-import { counterStore } from '@/stores/counter.js';
-
 import { APP_NAME } from '@/helpers/constants.js';
-
-import HelloWorld from '@/components/HelloWorld.vue';
-import TheWelcome from '@/components/TheWelcome.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-    TheWelcome
-  },
   constants: {
     APP_NAME
   },
-  computed: {
-    counterStore: function () {
-      return counterStore();
-    },
-    ...mapState(counterStore, [
-      'count',
-      'doubledCount'
-    ])
-  }
 };
 </script>
 

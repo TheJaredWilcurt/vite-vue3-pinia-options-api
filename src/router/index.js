@@ -1,12 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import FsExample from '@/views/FsExample.vue';
 import HelloWorld from '@/views/HelloWorld.vue';
 import PiniaDemo from '@/views/PiniaDemo.vue';
-import ResourceLinks from '@.views/ResourceLinks.vue';
+import ResourceLinks from '@/views/ResourceLinks.vue';
 
 export const router = createRouter({
-  history: createWebHashHistory();
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -14,7 +13,19 @@ export const router = createRouter({
       component: HelloWorld
     },
     {
-      path:
+      path: '/pinia',
+      name: 'pinia',
+      component: PiniaDemo
+    },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: ResourceLinks
+    },
+    {
+      path: '/:catchAll(.*)*',
+      name: '404',
+      redirect: '/'
     }
   ]
 })

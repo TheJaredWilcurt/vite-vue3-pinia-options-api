@@ -1,6 +1,6 @@
 <template>
   <div class="greetings">
-    <h1 class="green">{{ message }}</h1>
+    <h1 class="green">Vue Boilerplate</h1>
     <h3>
       This boilerplate uses
       <a href="https://vitejs.dev" target="_blank" rel="noopener">Vite</a> +
@@ -14,12 +14,6 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: {
-    message: {
-      type: String,
-      required: true
-    }
-  }
 };
 </script>
 
