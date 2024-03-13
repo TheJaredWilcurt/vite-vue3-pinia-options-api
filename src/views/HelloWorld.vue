@@ -6,6 +6,7 @@
       <a href="https://vitejs.dev" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org" target="_blank" rel="noopener">Vue 3</a> +
       <a href="https://pinia.vuejs.org" target="_blank" rel="noopener">Pinia</a> +
+      <a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a> +
       the <a href="https://docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" target="_blank" rel="noopener">superior Options API</a>.
     </h3>
   </div>

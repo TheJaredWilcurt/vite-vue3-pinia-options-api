@@ -1,11 +1,5 @@
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-    />
-
     <nav>
       <RouterLink :to="{ name: 'welcome' }">
         Welcome
@@ -17,6 +11,11 @@
         Resources
       </RouterLink>
     </nav>
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="./assets/logo.svg"
+    />
 
   </header>
 
@@ -39,6 +38,28 @@ export default {
 <style scoped>
 header {
   line-height: 1.5;
+}
+
+nav {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+nav a {
+  background: #FFF3;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+}
+nav a:hover {
+  background: #FFF5;
+  color: #FFF;
+}
+.router-link-active {
+  background: #FFF7;
+  color: #FFF;
+}
+.router-link-active:hover {
+  background: #FFF8;
 }
 
 .logo {
