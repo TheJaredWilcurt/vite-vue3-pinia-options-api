@@ -31,7 +31,7 @@ export default {
   name: 'App',
   constants: {
     APP_NAME
-  },
+  }
 };
 </script>
 

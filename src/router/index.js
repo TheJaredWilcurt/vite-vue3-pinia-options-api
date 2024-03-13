@@ -28,4 +28,4 @@ export const router = createRouter({
       redirect: '/'
     }
   ]
-})
+});
