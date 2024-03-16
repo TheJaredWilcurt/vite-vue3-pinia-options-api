@@ -1,60 +1,36 @@
 <template>
   <header>
+    <nav>
+      <RouterLink :to="{ name: 'welcome' }">
+        Welcome
+      </RouterLink>
+      <RouterLink :to="{ name: 'pinia' }">
+        Pinia Demo
+      </RouterLink>
+      <RouterLink :to="{ name: 'resources' }">
+        Resources
+      </RouterLink>
+    </nav>
     <img
       alt="Vue logo"
       class="logo"
       src="./assets/logo.svg"
     />
 
-    <div class="wrapper">
-      <HelloWorld :message="APP_NAME" />
-
-      <hr />
-
-      <div>
-        <h2 class="green">🍍 Pinia Example:</h2>
-
-        <ul>
-          <li><strong>Count:</strong> {{ count }}</li>
-          <li><strong>Doubled Count:</strong> {{ doubledCount }}</li>
-          <li><button @click="counterStore.incrementCount">Increment Count</button></li>
-        </ul>
-      </div>
-    </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <RouterView />
   </main>
 </template>
 
 <script>
-import { mapState } from 'pinia';
-
-import { counterStore } from '@/stores/counter.js';
-
 import { APP_NAME } from '@/helpers/constants.js';
-
-import HelloWorld from '@/components/HelloWorld.vue';
-import TheWelcome from '@/components/TheWelcome.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld,
-    TheWelcome
-  },
   constants: {
     APP_NAME
-  },
-  computed: {
-    counterStore: function () {
-      return counterStore();
-    },
-    ...mapState(counterStore, [
-      'count',
-      'doubledCount'
-    ])
   }
 };
 </script>
@@ -64,6 +40,28 @@ header {
   line-height: 1.5;
 }
 
+nav {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+nav a {
+  background: #FFF3;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+}
+nav a:hover {
+  background: #FFF5;
+  color: #FFF;
+}
+.router-link-active {
+  background: #FFF7;
+  color: #FFF;
+}
+.router-link-active:hover {
+  background: #FFF8;
+}
+
 .logo {
   display: block;
   width: 125px;
@@ -71,21 +69,4 @@ header {
   margin: 0px auto 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0px 2rem 0px 0px;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>

@@ -13,7 +13,8 @@
   "dependencies": {
     "pinia": "^2.1.7",
     "vue": "^3.3.9",
-    "vue-options-api-constants-plugin": "^1.0.1"
+    "vue-options-api-constants-plugin": "^1.0.1",
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.23.3",
