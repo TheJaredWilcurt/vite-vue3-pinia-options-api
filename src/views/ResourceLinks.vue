@@ -15,7 +15,7 @@
     <a href="https://www.sublimetext.com" target="_blank" rel="noopener">Sublime Text</a> +
     <a href="https://packagecontrol.io/packages/Vue%20Syntax%20Highlight" target="_blank" rel="noopener">Vue Syntax Highlighting</a>.
     If you need to test your components and web pages, check out
-    <a href="https://jestjs.io" target="_blank" rel="noopener">Jest</a>,
+    <a href="https://vitest.dev/" target="_blank" rel="noopener">Vitest</a>,
     <a href="https://test-utils.vuejs.org" target="_blank" rel="noopener">Vue Test-Utils</a>, and
     <a href="https://github.com/tjw-lint/jest-serializer-vue-tjw" target="_blank">jest-serializer-vue-tjw</a>.
   </WelcomeItem>

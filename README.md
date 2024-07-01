@@ -1,4 +1,4 @@
-# Vue 3 + Vite + Pinia + Options API
+# Vue 3 + Vite + Pinia + Options API + Vue-Router
 
 This template should help get you started developing with Vue 3 and Pinia using Vite.
 
