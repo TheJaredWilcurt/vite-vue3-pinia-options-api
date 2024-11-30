@@ -15,26 +15,25 @@
     "eslint 8.52.0 was the last version to officially support stylistic linting, now moved to separate repo"
   ],
   "dependencies": {
-    "pinia": "^2.1.7",
-    "vue": "^3.4.31",
+    "pinia": "^2.2.8",
+    "vue": "^3.5.13",
     "vue-options-api-constants-plugin": "^1.0.1",
-    "vue-router": "^4.4.0"
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.24.7",
-    "@vitejs/plugin-vue": "^5.0.5",
+    "@babel/eslint-parser": "^7.25.9",
+    "@vitejs/plugin-vue": "^5.2.1",
     "eslint": "8.52.0",
     "eslint-config-tjw-base": "^2.0.0",
     "eslint-config-tjw-import": "^1.0.0",
     "eslint-config-tjw-vue": "^3.0.0",
-    "eslint-import-resolver-webpack": "^0.13.8",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-vue": "^9.26.0",
-    "eslint-plugin-vuejs-accessibility": "^2.3.1",
+    "eslint-import-resolver-webpack": "^0.13.9",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-vue": "^9.31.0",
+    "eslint-plugin-vuejs-accessibility": "^2.4.1",
     "vite": "^5.3.2"
   },
   "volta": {
-    "node": "20.7.0",
-    "npm": "10.1.0"
+    "node": "22.11.0"
   }
 }
