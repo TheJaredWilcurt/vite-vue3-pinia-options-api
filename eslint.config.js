@@ -2,7 +2,7 @@ import path from 'node:path';
 
 import pluginJs from '@eslint/js';
 import tjwBase from 'eslint-config-tjw-base';
-// import tjwImport from 'eslint-config-tjw-import';
+import tjwImport from 'eslint-config-tjw-import';
 import tjwVue from 'eslint-config-tjw-vue';
 import pluginImport from 'eslint-plugin-import';
 import pluginVue from 'eslint-plugin-vue';
@@ -15,12 +15,15 @@ const vueA11yRecommended = pluginVueA11y.configs['flat/recommended'];
 
 export default [
   pluginJs.configs.recommended,
+  tjwBase,
+
   pluginImport.flatConfigs.recommended,
+  tjwImport,
+
   ...vue3Recommended,
   ...vueA11yRecommended,
-  tjwBase,
-  // tjwImport,
   tjwVue,
+
   {
   //   files: [
   //     '**/*.{js,mjs,cjs,vue}'
