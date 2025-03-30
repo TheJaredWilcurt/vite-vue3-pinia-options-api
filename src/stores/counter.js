@@ -1,4 +1,3 @@
-/* eslint-disable import/no-unused-modules */
 import { defineStore } from 'pinia';
 
 export const counterStore = defineStore('counter', {
