@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "npm run build && vite preview --port 4173",
-    "dlint": "eslint --config=eslint.config.js src vite.config.js eslint.config.js",
     "lint": "eslint *.js src",
-    "fix": "eslint --fix src vite.config.js eslint.config.js"
+    "fix": "eslint --fix src vite.config.js eslint.config.js",
+    "volta": "volta pin node@latest && volta pin npm@latest && git status"
   },
   "ManifestComments": [],
   "dependencies": {
@@ -35,7 +35,7 @@
     "vite-plugin-vue-devtools": "^7.7.2"
   },
   "volta": {
-    "node": "22.9.0",
-    "npm": "10.9.0"
+    "node": "23.10.0",
+    "npm": "11.2.0"
   }
 }
