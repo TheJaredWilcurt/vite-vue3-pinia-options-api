@@ -17,7 +17,7 @@ const vueA11yRecommended = pluginVueA11y.configs['flat/recommended'];
 
 export default [
   pluginJs.configs.recommended,
-  tjwBase,
+  tjwBase.configs.recommended,
 
   pluginImport.flatConfigs.recommended,
   tjwImport,
