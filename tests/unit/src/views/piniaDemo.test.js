@@ -1,5 +1,3 @@
-import { flushPromises } from '@vue/test-utils';
-
 import PiniaDemo from '@/views/PiniaDemo.vue';
 
 import testHelpers from '@@/unit/testHelpers.js';
@@ -28,9 +26,7 @@ describe('PiniaDemo', () => {
       .toEqual('4');
 
     const button = wrapper.find('[data-test="increment"]');
-    console.log(button.html());
     await button.trigger('click');
-    await flushPromises();
 
     expect(wrapper.find('[data-test="count"]').text())
       .toEqual('3');
