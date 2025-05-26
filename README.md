@@ -2,6 +2,27 @@
 
 This template should help get you started developing with Vue 3 and Pinia using Vite.
 
+**Includes:**
+
+* Vite
+* Vue 3
+* Vue-Router
+* Pinia
+* Vite-Vue-DevTools
+* ESLint
+  * A11Y
+  * JS
+  * Import
+  * Tests
+  * Vue
+* Unit Tests
+  * Vitest
+  * Happy-DOM
+  * Vue-Test-Utils
+  * Pinia-Testing
+  * Vue-Snapshot-Serializer
+  * V8 Coverage
+
 
 ## Running locally
 

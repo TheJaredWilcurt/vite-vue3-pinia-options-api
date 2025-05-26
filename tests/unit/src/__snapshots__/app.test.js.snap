@@ -1,0 +1,19 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > Renders correctly 1`] = `
+<header>
+  <nav>
+    <a href="#/"> Welcome </a>
+    <a href="#/pinia"> Pinia Demo </a>
+    <a href="#/resources"> Resources </a>
+  </nav>
+  <img
+    alt="Vue logo"
+    class="logo"
+    src="/src/assets/logo.svg"
+  />
+</header>
+<main>
+  <!---->
+</main>
+`;

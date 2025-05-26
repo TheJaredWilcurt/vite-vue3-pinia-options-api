@@ -1,20 +1,46 @@
 <template>
   <div class="greetings">
-    <h1 class="green">Vue Boilerplate</h1>
+    <h1 class="green">{{ APP_NAME }}</h1>
     <h3>
       This boilerplate uses
-      <a href="https://vitejs.dev" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org" target="_blank" rel="noopener">Vue 3</a> +
-      <a href="https://pinia.vuejs.org" target="_blank" rel="noopener">Pinia</a> +
-      <a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a> +
-      the <a href="https://docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing" target="_blank" rel="noopener">superior Options API</a>.
+      <ResourceLink
+        text="Vite"
+        link="https://vitejs.dev"
+      /> +
+      <ResourceLink
+        text="Vue 3"
+        link="https://vuejs.org"
+      /> +
+      <ResourceLink
+        text="Pinia"
+        link="https://pinia.vuejs.org"
+      /> +
+      <ResourceLink
+        text="Vue Router"
+        link="https://router.vuejs.org"
+      /> +
+      the
+      <ResourceLink
+        text="superior Options API"
+        link="https://docs.google.com/presentation/d/1fsDhn_MptD6c-_ALgurQtvaRFkfbfukbbFGfEfckzvk/edit?usp=sharing"
+      />.
     </h3>
   </div>
 </template>
 
 <script>
+import { APP_NAME } from '@/helpers/constants.js';
+
+import ResourceLink from '@/components/ResourceLink.vue';
+
 export default {
-  name: 'HelloWorld'
+  name: 'HelloWorld',
+  components: {
+    ResourceLink
+  },
+  constants: {
+    APP_NAME
+  }
 };
 </script>
 

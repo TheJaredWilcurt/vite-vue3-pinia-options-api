@@ -3,24 +3,43 @@
     <h2 class="green">🍍 Pinia Example:</h2>
 
     <ul>
-      <li><strong>Count:</strong> {{ count }}</li>
-      <li><strong>Doubled Count:</strong> {{ doubledCount }}</li>
-      <li><button @click="counterStore.incrementCount">Increment Count</button></li>
+      <li>
+        <strong class="pinia-label">Count:</strong>
+        <span data-test="count">
+          {{ count }}
+        </span>
+      </li>
+      <li>
+        <strong class="pinia-label">Doubled Count:</strong>
+        <span data-test="doubled">
+          {{ doubledCount }}
+        </span>
+      </li>
+      <li>
+        <button
+          data-test="increment"
+          @click="incrementCount"
+        >
+          Increment Count
+        </button>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
-import { mapState } from 'pinia';
+import { mapActions, mapState } from 'pinia';
 
 import { counterStore } from '@/stores/counter.js';
 
 export default {
   name: 'PiniaDemo',
+  methods: {
+    ...mapActions(counterStore, [
+      'incrementCount'
+    ])
+  },
   computed: {
-    counterStore: function () {
-      return counterStore();
-    },
     ...mapState(counterStore, [
       'count',
       'doubledCount'
@@ -30,4 +49,7 @@ export default {
 </script>
 
 <style>
+.pinia-label {
+  margin-right: 0.25em;
+}
 </style>

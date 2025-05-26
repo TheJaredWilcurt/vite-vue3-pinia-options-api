@@ -2,7 +2,11 @@
   <WelcomeItem>
     <template #heading>Documentation</template>
 
-    Vue's <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
+    Vue's
+    <ResourceLink
+      text="official documentation"
+      link="https://vuejs.org"
+    />
     provides you with all information you need to get started.
   </WelcomeItem>
 
@@ -10,27 +14,66 @@
     <template #heading>Tooling</template>
 
     This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>.
+    <ResourceLink
+      text="Vite"
+      link="https://vitejs.dev/guide/features.html"
+    />.
     The recommended IDE setup is
-    <a href="https://www.sublimetext.com" target="_blank" rel="noopener">Sublime Text</a> +
-    <a href="https://packagecontrol.io/packages/Vue%20Syntax%20Highlight" target="_blank" rel="noopener">Vue Syntax Highlighting</a>.
+    <ResourceLink
+      text="Sublime Text"
+      link="https://www.sublimetext.com"
+    />
+    +
+    <ResourceLink
+      text="Vue Syntax Highlighting"
+      link="https://packagecontrol.io/packages/Vue%20Syntax%20Highlight"
+    />.
     If you need to test your components and web pages, check out
-    <a href="https://vitest.dev/" target="_blank" rel="noopener">Vitest</a>,
-    <a href="https://test-utils.vuejs.org" target="_blank" rel="noopener">Vue Test-Utils</a>, and
-    <a href="https://github.com/tjw-lint/jest-serializer-vue-tjw" target="_blank">jest-serializer-vue-tjw</a>.
+    <ResourceLink
+      text="Vitest"
+      link="https://vitest.dev"
+    />,
+    <ResourceLink
+      link="https://test-utils.vuejs.org"
+      text="Vue Test-Utils"
+    />,
+    and
+    <ResourceLink
+      text="Vue Snapshot Serializer"
+      link="https://TheJaredWilcurt.com/vue-snapshot-serializer"
+    />.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #heading>Ecosystem</template>
 
     Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>.
+    <ResourceLink
+      text="Pinia"
+      link="https://pinia.vuejs.org"
+    />,
+    <ResourceLink
+      text="Vue Router"
+      link="https://router.vuejs.org"
+    />,
+    <ResourceLink
+      text="Vue Test Utils"
+      link="https://test-utils.vuejs.org"
+    />, and
+    <ResourceLink
+      text="Vue Dev Tools"
+      link="https://github.com/vuejs/devtools"
+    />.
     If you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a> and
-    <a href="https://github.com/vuesomedev/awesome-vue-3" target="_blank" rel="noopener">Awesome Vue 3</a>
+    <ResourceLink
+      text="Awesome Vue"
+      link="https://github.com/vuejs/awesome-vue"
+    />
+    and
+    <ResourceLink
+      text="Awesome Vue 3"
+      link="https://github.com/vuesomedev/awesome-vue-3"
+    />
     a visit.
   </WelcomeItem>
 
@@ -38,28 +81,37 @@
     <template #heading>Community</template>
 
     Stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>,
+    <ResourceLink
+      text="Vue Land"
+      link="https://chat.vuejs.org"
+    />,
     our official Discord server, or
-    <a
-      v-text="'StackOverflow'"
-      href="https://stackoverflow.com/questions/tagged/vue.js"
-      target="_blank"
-      rel="noopener"
-    ></a>.
+    <ResourceLink
+      text="StackOverflow"
+      link="https://stackoverflow.com/questions/tagged/vue.js"
+    />.
     You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a>
+    <ResourceLink
+      text="our mailing list"
+      link="https://news.vuejs.org"
+    />
     and follow the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
+    <ResourceLink
+      text="@vuejs"
+      link="https://twitter.com/vuejs"
+    />
     twitter account for latest news in the Vue world.
   </WelcomeItem>
 </template>
 
 <script>
+import ResourceLink from '@/components/ResourceLink.vue';
 import WelcomeItem from '@/components/WelcomeItem.vue';
 
 export default {
   name: 'TheWelcome',
   components: {
+    ResourceLink,
     WelcomeItem
   }
 };
