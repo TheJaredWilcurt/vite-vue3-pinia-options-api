@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PiniaDemo > Mounts and renders 1`] = `
+<div>
+  <h2 class="green">
+    🍍 Pinia Example:
+  </h2>
+  <ul>
+    <li>
+      <strong class="pinia-label">
+        Count:
+      </strong>
+      <span>
+        2
+      </span>
+    </li>
+    <li>
+      <strong class="pinia-label">
+        Doubled Count:
+      </strong>
+      <span>
+        4
+      </span>
+    </li>
+    <li>
+      <button>
+        Increment Count
+      </button>
+    </li>
+  </ul>
+</div>
+`;

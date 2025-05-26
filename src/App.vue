@@ -25,13 +25,8 @@
 </template>
 
 <script>
-import { APP_NAME } from '@/helpers/constants.js';
-
 export default {
-  name: 'App',
-  constants: {
-    APP_NAME
-  }
+  name: 'App'
 };
 </script>
 

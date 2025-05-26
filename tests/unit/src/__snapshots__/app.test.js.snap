@@ -1,0 +1,37 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > Renders correctly 1`] = `
+<header>
+  <nav>
+    <router-link-stub
+      ariacurrentvalue="page"
+      custom="false"
+      replace="false"
+      to="{ name: 'welcome' }"
+      viewtransition="false"
+    ></router-link-stub>
+    <router-link-stub
+      ariacurrentvalue="page"
+      custom="false"
+      replace="false"
+      to="{ name: 'pinia' }"
+      viewtransition="false"
+    ></router-link-stub>
+    <router-link-stub
+      ariacurrentvalue="page"
+      custom="false"
+      replace="false"
+      to="{ name: 'resources' }"
+      viewtransition="false"
+    ></router-link-stub>
+  </nav>
+  <img
+    alt="Vue logo"
+    class="logo"
+    src="/src/assets/logo.svg"
+  />
+</header>
+<main>
+  <router-view-stub name="default"></router-view-stub>
+</main>
+`;

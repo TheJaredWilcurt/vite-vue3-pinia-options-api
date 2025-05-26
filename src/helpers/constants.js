@@ -1,1 +1,1 @@
-export const APP_NAME = 'Vite, Vue 3, Pinia, Options API';
+export const APP_NAME = 'Vue Boilerplate';
