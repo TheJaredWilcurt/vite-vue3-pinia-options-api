@@ -4,7 +4,7 @@ import testHelpers from '@@/unit/testHelpers.js';
 
 describe('App', () => {
   const setupWrapper = async () => {
-    const wrapper = await testHelpers.shallowMount(App);
+    const wrapper = await testHelpers.mount(App);
     return wrapper;
   };
 
