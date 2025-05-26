@@ -3,18 +3,9 @@
 exports[`App > Renders correctly 1`] = `
 <header>
   <nav>
-    <a
-      class=""
-      href="#/"
-    > Welcome </a>
-    <a
-      class=""
-      href="#/pinia"
-    > Pinia Demo </a>
-    <a
-      class=""
-      href="#/resources"
-    > Resources </a>
+    <a href="#/"> Welcome </a>
+    <a href="#/pinia"> Pinia Demo </a>
+    <a href="#/resources"> Resources </a>
   </nav>
   <img
     alt="Vue logo"

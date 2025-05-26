@@ -11,6 +11,10 @@ describe('App', () => {
   test('Renders correctly', async () => {
     const wrapper = await setupWrapper();
 
+    global.vueSnapshots.stubs = {
+      '[class=""]': { removeAttributes: ['class'] }
+    };
+
     expect(wrapper)
       .toMatchSnapshot();
   });
