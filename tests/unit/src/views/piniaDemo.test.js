@@ -1,4 +1,5 @@
 import { flushPromises } from '@vue/test-utils';
+
 import PiniaDemo from '@/views/PiniaDemo.vue';
 
 import testHelpers from '@@/unit/testHelpers.js';

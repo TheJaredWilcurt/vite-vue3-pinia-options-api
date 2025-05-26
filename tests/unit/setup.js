@@ -6,7 +6,7 @@ global.beforeEach(() => {
     formatting: {
     }
   };
-  globalThis.vueSnapshots = snapshotSettings;
+  global.vueSnapshots = snapshotSettings;
 });
 
 global.afterEach(() => {

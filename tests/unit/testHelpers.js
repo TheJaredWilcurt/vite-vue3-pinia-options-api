@@ -1,5 +1,6 @@
 import { createTestingPinia } from '@pinia/testing';
 import { mount, shallowMount } from '@vue/test-utils';
+
 import { router } from '@/router/index.js';
 
 export default {
