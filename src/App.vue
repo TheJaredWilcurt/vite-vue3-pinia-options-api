@@ -1,5 +1,24 @@
 <template>
   <header>
+    <h1 style="color: #FFF">Text</h1>
+    <span
+      style="
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #138660;
+        font-size: 12px;
+        font-weight: normal;
+      "
+    >Light Mode</span>
+    <span
+      style="
+        padding: 10px;
+        color: #FFFFFF;
+        background-color: #36BC90;
+        font-size: 12px;
+        font-weight: normal;
+      "
+    >Dark Mode</span>
     <nav>
       <RouterLink :to="{ name: 'welcome' }">
         Welcome
@@ -16,7 +35,6 @@
       class="logo"
       src="./assets/logo.svg"
     />
-
   </header>
 
   <main>
