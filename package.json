@@ -43,14 +43,14 @@
     "vite": "^6.3.5",
     "vite-plugin-vue-devtools": "^7.7.7",
     "vitest": "^3.1.4",
-    "vue-dev-tools-accessibility": "^0.4.2",
+    "vue-dev-tools-accessibility": "^0.5.0",
     "vue3-snapshot-serializer": "^2.12.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.44.1"
   },
   "volta": {
-    "node": "24.1.0",
-    "npm": "11.4.1"
+    "node": "24.3.0",
+    "npm": "11.4.2"
   }
 }
