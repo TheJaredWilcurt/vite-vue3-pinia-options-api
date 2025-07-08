@@ -1,5 +1,6 @@
 import { createTestingPinia } from '@pinia/testing';
 import { mount, shallowMount } from '@vue/test-utils';
+import constantsPlugin from 'vue-options-api-constants-plugin';
 
 import { router } from '@/router/index.js';
 
@@ -9,6 +10,7 @@ export default {
     options.global = options.global || {};
 
     options.global.plugins = [
+      constantsPlugin,
       router,
       createTestingPinia({
         stubActions: false
