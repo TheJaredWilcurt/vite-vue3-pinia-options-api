@@ -21,14 +21,14 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.30.0",
+    "@eslint/js": "^9.30.1",
     "@pinia/testing": "^1.0.2",
     "@stylistic/eslint-plugin": "^5.1.0",
     "@vitejs/plugin-vue": "^6.0.0",
     "@vitest/coverage-v8": "^3.2.4",
     "@vue/test-utils": "^2.4.6",
     "cross-env": "^7.0.3",
-    "eslint": "^9.30.0",
+    "eslint": "^9.30.1",
     "eslint-config-tjw-base": "^4.3.0",
     "eslint-config-tjw-import": "^2.0.0",
     "eslint-config-tjw-jest": "^3.0.0",
@@ -36,21 +36,21 @@
     "eslint-import-resolver-vite": "^2.1.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jest": "^29.0.1",
-    "eslint-plugin-vue": "^10.2.0",
+    "eslint-plugin-vue": "^10.3.0",
     "eslint-plugin-vuejs-accessibility": "^2.4.1",
-    "globals": "^16.2.0",
+    "globals": "^16.3.0",
     "happy-dom": "^18.0.1",
     "vite": "^6.3.5",
     "vite-plugin-vue-devtools": "^7.7.7",
     "vitest": "^3.1.4",
-    "vue-dev-tools-accessibility": "^0.3.2",
+    "vue-dev-tools-accessibility": "^0.5.0",
     "vue3-snapshot-serializer": "^2.12.0"
   },
   "optionalDependencies": {
-    "@rollup/rollup-linux-x64-gnu": "^4.44.1"
+    "@rollup/rollup-linux-x64-gnu": "^4.44.2"
   },
   "volta": {
-    "node": "24.1.0",
-    "npm": "11.4.1"
+    "node": "24.3.0",
+    "npm": "11.4.2"
   }
 }
