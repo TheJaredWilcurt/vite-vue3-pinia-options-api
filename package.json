@@ -50,7 +50,7 @@
     "@rollup/rollup-linux-x64-gnu": "^4.44.2"
   },
   "volta": {
-    "node": "24.3.0",
-    "npm": "11.4.2"
+    "node": "24.5.0",
+    "npm": "11.5.2"
   }
 }
