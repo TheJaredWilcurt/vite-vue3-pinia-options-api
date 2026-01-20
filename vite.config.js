@@ -1,11 +1,11 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import/extensions,import/no-extraneous-dependencies */
 
 import { fileURLToPath, URL } from 'node:url';
 
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import vueDevTools from 'vite-plugin-vue-devtools';
-import { configDefaults } from 'vitest/dist/config.js';
+import { configDefaults } from 'vitest/config';
 import vueDevToolsAccessibility from 'vue-dev-tools-accessibility';
 
 export default defineConfig({

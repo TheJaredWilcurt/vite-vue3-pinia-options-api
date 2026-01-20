@@ -27,8 +27,7 @@ This template should help get you started developing with Vue 3 and Pinia using 
 ## Running locally
 
 1. Download/Fork/Clone repo
-1. Install [Volta](https://volta.sh) to manage your Node/npm versions
-   * This project has a `volta` object in the `package.json` so you'll always be on the correct Node version when running from this folder
+1. Install [Proto](https://github.com/TheJaredWilcurt/blog/discussions/41) to manage your Node/npm versions
 1. Run `npm install`
 1. Run `npm start`
 
