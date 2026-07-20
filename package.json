@@ -11,7 +11,7 @@
     "unit": "cross-env TZ=America/New_York vitest --coverage",
     "lint": "eslint --ext .js,.vue src tests vite.config.js eslint.config.js",
     "fix": "npm run lint -- --fix",
-    "volta": "volta pin node@latest && volta pin npm@latest && git status"
+    "proto": "proto pin node latest --resolve --tool-native && git status"
   },
   "ManifestComments": [],
   "dependencies": {
@@ -49,6 +49,9 @@
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.62.2"
   },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true
+  },
   "devEngines": {
     "runtime": {
       "name": "node",
@@ -58,8 +61,5 @@
       "name": "npm",
       "version": "11.17.0"
     }
-  },
-  "allowScripts": {
-    "unrs-resolver@1.12.2": true
   }
 }
