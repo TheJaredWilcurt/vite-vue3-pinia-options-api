@@ -1,4 +1,4 @@
-/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable import-x/no-extraneous-dependencies */
 
 import { fileURLToPath, URL } from 'node:url';
 
@@ -8,7 +8,7 @@ import vueDevTools from 'vite-plugin-vue-devtools';
 import { configDefaults } from 'vitest/dist/config.js';
 import vueDevToolsAccessibility from 'vue-dev-tools-accessibility';
 
-export default defineConfig({
+const config = defineConfig({
   plugins: [
     vue(),
     vueDevTools({
@@ -43,3 +43,5 @@ export default defineConfig({
     ]
   }
 });
+
+export default config;
