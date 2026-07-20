@@ -34,7 +34,7 @@ import { APP_NAME } from '@/helpers/constants.js';
 import ResourceLink from '@/components/ResourceLink.vue';
 
 export default {
-  name: 'HelloWorld',
+  name: 'HomePage',
   components: {
     ResourceLink
   },
