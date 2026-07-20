@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import HelloWorld from '@/views/HelloWorld.vue';
+import HomePage from '@/views/HomePage.vue';
 import PiniaDemo from '@/views/PiniaDemo.vue';
 import ResourceLinks from '@/views/ResourceLinks.vue';
 
@@ -9,8 +9,8 @@ export const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'welcome',
-      component: HelloWorld
+      name: 'home',
+      component: HomePage
     },
     {
       path: '/pinia',

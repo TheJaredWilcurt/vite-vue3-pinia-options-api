@@ -1,11 +1,11 @@
-import WelcomeItem from '@/components/WelcomeItem.vue';
+import ResourceGroup from '@/components/ResourceGroup.vue';
 
 import testHelpers from '@@/unit/testHelpers.js';
 
-describe('WelcomeItem', () => {
+describe('ResourceGroup', () => {
   const setupWrapper = async (slots) => {
     const options = { slots };
-    const wrapper = await testHelpers.mount(WelcomeItem, options);
+    const wrapper = await testHelpers.mount(ResourceGroup, options);
     return wrapper;
   };
 

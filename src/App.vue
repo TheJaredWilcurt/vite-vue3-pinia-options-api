@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <RouterLink :to="{ name: 'welcome' }">
+      <RouterLink :to="{ name: 'home' }">
         Welcome
       </RouterLink>
       <RouterLink :to="{ name: 'pinia' }">

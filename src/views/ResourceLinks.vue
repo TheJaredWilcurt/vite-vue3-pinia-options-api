@@ -1,5 +1,5 @@
 <template>
-  <WelcomeItem>
+  <ResourceGroup>
     <template #heading>Documentation</template>
 
     Vue's
@@ -8,9 +8,9 @@
       link="https://vuejs.org"
     />
     provides you with all information you need to get started.
-  </WelcomeItem>
+  </ResourceGroup>
 
-  <WelcomeItem>
+  <ResourceGroup>
     <template #heading>Tooling</template>
 
     This project is served and bundled with
@@ -42,9 +42,9 @@
       text="Vue Snapshot Serializer"
       link="https://TheJaredWilcurt.com/vue-snapshot-serializer"
     />.
-  </WelcomeItem>
+  </ResourceGroup>
 
-  <WelcomeItem>
+  <ResourceGroup>
     <template #heading>Ecosystem</template>
 
     Get official tools and libraries for your project:
@@ -75,9 +75,9 @@
       link="https://github.com/vuesomedev/awesome-vue-3"
     />
     a visit.
-  </WelcomeItem>
+  </ResourceGroup>
 
-  <WelcomeItem>
+  <ResourceGroup>
     <template #heading>Community</template>
 
     Stuck? Ask your question on
@@ -101,18 +101,18 @@
       link="https://twitter.com/vuejs"
     />
     twitter account for latest news in the Vue world.
-  </WelcomeItem>
+  </ResourceGroup>
 </template>
 
 <script>
+import ResourceGroup from '@/components/ResourceGroup.vue';
 import ResourceLink from '@/components/ResourceLink.vue';
-import WelcomeItem from '@/components/WelcomeItem.vue';
 
 export default {
-  name: 'TheWelcome',
+  name: 'ResourceLinks',
   components: {
     ResourceLink,
-    WelcomeItem
+    ResourceGroup
   }
 };
 </script>
