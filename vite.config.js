@@ -5,7 +5,8 @@ import { fileURLToPath, URL } from 'node:url';
 import vue from '@vitejs/plugin-vue';
 import { defineConfig } from 'vite';
 import vueDevTools from 'vite-plugin-vue-devtools';
-import { configDefaults } from 'vitest/dist/config.js';
+/* eslint-disable-next-line import-x/extensions */
+import { configDefaults } from 'vitest/config';
 import vueDevToolsAccessibility from 'vue-dev-tools-accessibility';
 
 const config = defineConfig({
@@ -28,11 +29,14 @@ const config = defineConfig({
         ...(configDefaults?.coverage?.exclude || []),
         '.eslintrc.cjs',
         './src/main.js',
-        '**/scripts/'
+        '**/scripts/',
+        '**/tests/'
       ],
       reportsDirectory: './tests/unit/coverage'
     },
     environment: 'happy-dom',
+    // https://github.com/capricorn86/happy-dom/issues/1950
+    execArgv: ['--no-experimental-webstorage'],
     globals: true,
     root: '.',
     setupFiles: [
